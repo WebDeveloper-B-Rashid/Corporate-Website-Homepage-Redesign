@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future-Ready Tech Partner - Homepage</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom Tailwind Configuration -->
+
+    <link rel="stylesheet" href="Our-cleised.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#001a44', // Deep Blue used in the Figma image
+                        'primary-light': '#1e3a8a', // A slightly lighter blue for accents/hover
+                        'accent-teal': '#00bcd4',   // Bright accent color
+                        'surface-light': '#f8f8f8', // Light gray background for sections
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles for professional polish */
+        .shadow-custom {
+            box-shadow: 0 4px 6px -1px rgba(0, 26, 68, 0.1), 0 2px 4px -2px rgba(0, 26, 68, 0.06);
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #ffffff, #88b0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+    </style>
+</head>
+
+<body class="font-sans text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-primary-dark">Tech<span class="text-accent-teal">Corp</span></a>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-primary-dark font-medium">Services</a>
+                    <a href="#solutions" class="text-gray-600 hover:text-primary-dark font-medium">Solutions</a>
+                    <a href="#case-studies" class="text-gray-600 hover:text-primary-dark font-medium">Case Studies</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary-dark font-medium">Why Us</a>
+                    <a href="#blog" class="text-gray-600 hover:text-primary-dark font-medium">Blog</a>
+                </nav>
+                
+                <!-- Contact Button (visible on desktop) -->
+                <a href="#contact" class="hidden md:inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-dark hover:bg-primary-light transition duration-300">
+                    Get a Quote
+                </a>
+
+                <!-- Mobile Menu Button (Toggle functionality would be added via JS) -->
+                <button class="md:hidden p-2 rounded-md text-primary-dark focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Deep Blue Background from Figma) -->
+    <section class="bg-primary-dark text-white py-20 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Hero Content -->
+                <div class="space-y-6">
+                    <p class="text-accent-teal uppercase tracking-widest font-semibold">Global eCommerce &amp; Digital Solutions</p>
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+                        <span class="text-gradient">Transforming Ideas</span> into Digital Excellence.
+                    </h1>
+                    <p class="text-xl text-gray-300 max-w-lg">
+                        We are your trusted, future-ready technology partner, delivering technical innovation and global expertise to scale your business.
+                    </p>
+                    <div class="flex space-x-4 pt-4">
+                        <a href="#contact" class="px-8 py-3 text-lg font-semibold rounded-lg text-primary-dark bg-white hover:bg-gray-200 transition duration-300 shadow-xl">
+                            Let's Build Together
+                        </a>
+                        <a href="#case-studies" class="px-8 py-3 text-lg font-semibold rounded-lg text-white border-2 border-accent-teal hover:bg-accent-teal transition duration-300">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+                <!-- Hero Visual -->
+                <div class="relative hidden md:block">
+                    <img src="https://t4.ftcdn.net/jpg/04/04/42/73/360_F_404427377_AQnpJu1wXbb6sBu8eFOpEYeulaK13cJ3.jpg" alt="Abstract visualization of data and network connections representing technical expertise." class="rounded-xl shadow-2xl transition duration-500 ease-in-out hover:scale-[1.02]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Client Logos -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-lg font-medium text-gray-500 mb-8">Trusted by global leaders in technology and commerce</h3>
+            <div class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                <img src="https://www.theforage.com/blog/wp-content/uploads/2024/03/client-services-e1709741837781.jpg" alt="Client Logo A" class="h-8 md:h-40 opacity-70 hover:opacity-100 transition duration-300">
+
+                <img src="https://media.istockphoto.com/id/2004891062/photo/happy-mid-aged-business-woman-manager-handshaking-greeting-client-in-office.jpg?s=612x612&w=0&k=20&c=kP6DSKhIVMO-m27l4nCmvpwzaKvzV8ncPT9elotc4QI=" alt="Client Logo B" class="h-8 md:h-40 opacity-70 hover:opacity-100 transition duration-300">
+
+                <img src="https://www.salesforce.com/ca/blog/wp-content/uploads/sites/12/2023/10/how-to-manage-a-client-relationship-when-your-personalities-are-different-open-graph.jpg" alt="Client Logo C" class="h-8 md:h-40 opacity-70 hover:opacity-100 transition duration-300">
+
+                <img src="https://img.freepik.com/free-photo/happy-financial-consultant-greeting-his-clients-while-meeting-them-their-home-me-are-shaking-hands_637285-3763.jpg?semt=ais_hybrid&w=740&q=80" alt="Client Logo D" class="h-8 md:h-40 opacity-70 hover:opacity-100 transition duration-300">
+
+                <!-- <img src="https://media.istockphoto.com/id/1401761851/photo/female-financial-advisor-reviews-documents-on-digital-tablet.jpg?s=612x612&w=0&k=20&c=94zuGRWtn2NeVSubaljEf8zdznBc9nRVUmNoPBfpKBA=" alt="Client Logo E" class="h-8 md:h-40 opacity-70 hover:opacity-100 transition duration-300"> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Our Services -->
+    <section id="services" class="py-16 sm:py-24 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-4">
+                    <i class="fas fa-shopping-basket text-4xl text-accent-teal"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">eCommerce Development</h3>
+                    <p class="text-gray-600">Bespoke platform development, migration, and optimization for global retail brands.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-4">
+                    <i class="fas fa-cloud text-4xl text-accent-teal"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Cloud & DevOps</h3>
+                    <p class="text-gray-600">Scalable infrastructure, CI/CD pipelines, and cloud cost management (AWS, Azure, GCP).</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-4">
+                    <i class="fas fa-chart-line text-4xl text-accent-teal"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Digital Strategy & Consulting</h3>
+                    <p class="text-gray-600">Data-driven roadmaps, market analysis, and digital transformation consulting.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-4">
+                    <i class="fas fa-mobile-alt text-4xl text-accent-teal"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Mobile App Development</h3>
+                    <p class="text-gray-600">Building native and cross-platform apps that deliver flawless user experiences.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-4">
+                    <i class="fas fa-shield-alt text-4xl text-accent-teal"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Security & Compliance</h3>
+                    <p class="text-gray-600">Ensuring robust security protocols and global compliance standards (e.g., GDPR, CCPA).</p>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-4">
+                    <i class="fas fa-robot text-4xl text-accent-teal"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">AI & Automation</h3>
+                    <p class="text-gray-600">Integrating custom AI tools for customer support and process optimization.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-primary-dark font-semibold hover:text-accent-teal transition duration-300">
+                    View More Services <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us (Trust-building Section) -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div>
+                    <img src="https://www.apexsinfo.com/wp-content/uploads/2023/12/expertise.jpg" alt="Team collaborating on digital strategy, representing global expertise." class="rounded-xl shadow-2xl">
+                </div>
+                <!-- Content -->
+                <div class="space-y-8">
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-primary-dark">Why We Are The Future-Ready Choice</h2>
+                    <p class="text-lg text-gray-600">
+                        Our differentiator lies in our commitment to innovation and global scalability. We don't just build websites; we engineer profitable digital ecosystems designed for the next decade.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-accent-teal mt-1"></i>
+                            <p class="text-primary-dark font-medium">Scalable Solutions: Built on robust, future-proof architectures.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-accent-teal mt-1"></i>
+                            <p class="text-primary-dark font-medium">Global Expertise: Certified specialists in international eCommerce compliance.</p>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-accent-teal mt-1"></i>
+                            <p class="text-primary-dark font-medium">Client-Centric Approach: Dedicated success managers and 24/7 support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. AI-Powered Expertise & Numbers -->
+    <section class="py-16 sm:py-24 bg-primary-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-12 text-gradient">Driving Innovation with AI</h2>
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-16">
+                Our proprietary AI models accelerate development, enhance security, and predict market trends with unmatched precision.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Metric 1 -->
+                <div>
+                    <p class="text-5xl font-extrabold text-accent-teal">99%</p>
+                    <p class="mt-2 text-lg font-medium text-gray-300">Uptime Reliability</p>
+                </div>
+                <!-- Metric 2 -->
+                <div>
+                    <p class="text-5xl font-extrabold text-accent-teal">40%</p>
+                    <p class="mt-2 text-lg font-medium text-gray-300">Faster Time-to-Market</p>
+                </div>
+                <!-- Metric 3 -->
+                <div>
+                    <p class="text-5xl font-extrabold text-accent-teal">10K+</p>
+                    <p class="mt-2 text-lg font-medium text-gray-300">Daily Automated Checks</p>
+                </div>
+                <!-- Metric 4 -->
+                <div>
+                    <p class="text-5xl font-extrabold text-accent-teal">25+</p>
+                    <p class="mt-2 text-lg font-medium text-gray-300">Certified Experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Solutions Section -->
+    <section id="solutions" class="py-16 sm:py-24 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">Specialized Digital Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Solution Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-3">
+                    <i class="fas fa-lock text-3xl text-primary-light"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Secure Payment Gateways</h3>
+                    <p class="text-gray-600">PCI-compliant integration for seamless global transactions.</p>
+                </div>
+                <!-- Solution Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-3">
+                    <i class="fas fa-boxes text-3xl text-primary-light"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Inventory Management Systems</h3>
+                    <p class="text-gray-600">Real-time stock synchronization across all channels.</p>
+                </div>
+                <!-- Solution Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 space-y-3">
+                    <i class="fas fa-user-friends text-3xl text-primary-light"></i>
+                    <h3 class="text-xl font-semibold text-primary-dark">Customer Loyalty Programs</h3>
+                    <p class="text-gray-600">Designing and integrating platforms for maximum customer retention.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-primary-dark font-semibold hover:text-accent-teal transition duration-300">
+                    Explore All Solutions <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Technologies & Platforms -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">Our Tech Stack</h2>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-16">
+                We work with the best-in-class technologies to deliver speed, stability, and scale.
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-8">
+                <i class="fab fa-aws text-6xl text-orange-500 opacity-80 hover:opacity-100 transition duration-300"></i>
+                <i class="fab fa-shopify text-6xl text-green-500 opacity-80 hover:opacity-100 transition duration-300"></i>
+                <i class="fab fa-react text-6xl text-blue-400 opacity-80 hover:opacity-100 transition duration-300"></i>
+                <i class="fab fa-node-js text-6xl text-green-600 opacity-80 hover:opacity-100 transition duration-300"></i>
+                <i class="fab fa-docker text-6xl text-blue-600 opacity-80 hover:opacity-100 transition duration-300"></i>
+                <i class="fab fa-php text-6xl text-indigo-500 opacity-80 hover:opacity-100 transition duration-300"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Case Studies -->
+    <section id="case-studies" class="py-16 sm:py-24 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">Success Stories</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Case Study 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                    <!-- <img src="https://acropolium.com/img/cases/revamping-legacy-platform-with-advanced-e-commerce-migration-services/img01.jpg"> -->
+                     <img src="https://www.thecommerceshop.com/wp-content/uploads/2025/07/website-migration-detailed-guidelines-scaled.png">
+
+                    
+                    <div class="p-6">
+                        <p class="text-sm font-semibold text-accent-teal">Retail / B2C</p>
+                        <h3 class="text-xl font-bold text-primary-dark my-2">eCommerce Website Migration</h3>
+                        <p class="text-gray-600 text-sm mb-4">Migrated a legacy platform to Magento 2, resulting in 150% faster checkout speed.</p>
+                        <a href="#" class="text-primary-dark font-medium hover:text-accent-teal">Read Full Case Study &rarr;</a>
+                    </div>
+                </div>
+                <!-- Case Study 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                    <img src="https://cdn.prod.website-files.com/671a5fabfac952255b7e6de4/6889e4ea907a1a3f0ab672ba_Prompt-Risk%20Assessment%20Visual%20-%20PH%201-1270x760%20(1).png" alt="Project image for fintech client." class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm font-semibold text-accent-teal">FinTech / B2B</p>
+                        <h3 class="text-xl font-bold text-primary-dark my-2">AI-Driven Risk Assessment Tool</h3>
+                        <p class="text-gray-600 text-sm mb-4">Developed a custom AI tool that reduced fraud detection time by 75%.</p>
+                        <a href="#" class="text-primary-dark font-medium hover:text-accent-teal">Read Full Case Study &rarr;</a>
+                    </div>
+                </div>
+                <!-- Case Study 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEXwU6DMUaT7jfa2jE6n8YCQganlplY7SHiw&s" alt="Project image for logistics client." class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <p class="text-sm font-semibold text-accent-teal">Logistics / Supply Chain</p>
+                        <h3 class="text-xl font-bold text-primary-dark my-2">Cloud-Based Supply Chain Optimization</h3>
+                        <p class="text-gray-600 text-sm mb-4">Implemented AWS services to optimize global logistics, cutting costs by 20%.</p>
+                        <a href="#" class="text-primary-dark font-medium hover:text-accent-teal">Read Full Case Study &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Client Testimonials (Simplified Carousel Look) -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-surface-light p-8 rounded-xl shadow-custom border-t-4 border-accent-teal space-y-4">
+                    <p class="italic text-gray-700">"The expertise in cloud architecture transformed our operational efficiency. A truly future-ready partner."</p>
+                    <div class="flex items-center space-x-4 pt-2">
+                        <img style="height="350px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTAHbPcscIvQSrHqnMkd4hI2VOfZJ2ZtTgVg&s" alt="Client Avatar" class="rounded-full">
+                        <div>
+                            <p class="font-semibold text-primary-dark">Jane Doe</p>
+                            <p class="text-sm text-gray-500">CTO, Global Retail</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-surface-light p-8 rounded-xl shadow-custom border-t-4 border-accent-teal space-y-4">
+                    <p class="italic text-gray-700">"Their AI integration gave us a competitive edge we couldn't have achieved otherwise. Highly recommend."</p>
+                    <div class="flex items-center space-x-4 pt-2">
+                        <img style="height="350px" src="https://fedsoc.org/cdn-cgi/image/fit=scale-down,width=225,format=jpeg/https://fedsoc-cms-public.s3.amazonaws.com/headshots/y4ZyC879jyGT9kf1x6TaTqSM1c10ZaGJeA0UYBGf.jpg" alt="Client Avatar" class="rounded-full">
+
+                        <!-- <img src="https://a57.foxnews.com/cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/200ace7b-13b9-4fec-90c8-6ab36e4c0d3a/c8c95f99-f82c-4a1b-960f-93f3c1fb65bc/1280x720/match/1024/512/image.jpg?ve=1&tl=1" alt="Client Avatar" class="rounded-full"> -->
+                       
+                        <div>
+                            <p class="font-semibold text-primary-dark">Mark Smith</p>
+                            <p class="text-sm text-gray-500">VP of Technology, FinCorp</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-surface-light p-8 rounded-xl shadow-custom border-t-4 border-accent-teal space-y-4">
+                    <p class="italic text-gray-700">"Flawless migration and exceptional post-launch support. They understand true global scale."</p>
+                    <div class="flex items-center space-x-4 pt-2">
+                        <!-- <img style="height="350px" src="https://media.glassdoor.com/people/sqll/2224382/flybuys-ceo1660687899617.png" alt="Client Avatar" class="rounded-full"> -->
+
+                        <img style="height="350px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ntIxIqMityF7RgvCR-yi4NRGY4QAIvpCi-k6az-UHeyOZU9KmctKHK9efXxO7__GnZs&usqp=CAU" alt="Client Avatar" class="rounded-full">
+                        <div>
+                            <p class="font-semibold text-primary-dark">Anna Lee</p>
+                            <p class="text-sm text-gray-500">COO, Logistics Giant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Industries We Serve -->
+    <section class="py-16 sm:py-24 bg-primary-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold mb-12 text-gradient">Global Industry Coverage</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                <div class="space-y-3 p-4 bg-primary-light rounded-lg hover:bg-primary-dark transition duration-300">
+                    <i class="fas fa-tshirt text-3xl text-accent-teal"></i>
+                    <p class="font-medium">Fashion & Apparel</p>
+                </div>
+                <div class="space-y-3 p-4 bg-primary-light rounded-lg hover:bg-primary-dark transition duration-300">
+                    <i class="fas fa-warehouse text-3xl text-accent-teal"></i>
+                    <p class="font-medium">Manufacturing</p>
+                </div>
+                <div class="space-y-3 p-4 bg-primary-light rounded-lg hover:bg-primary-dark transition duration-300">
+                    <i class="fas fa-stethoscope text-3xl text-accent-teal"></i>
+                    <p class="font-medium">Healthcare</p>
+                </div>
+                <div class="space-y-3 p-4 bg-primary-light rounded-lg hover:bg-primary-dark transition duration-300">
+                    <i class="fas fa-utensils text-3xl text-accent-teal"></i>
+                    <p class="font-medium">F&B / Grocery</p>
+                </div>
+                <div class="space-y-3 p-4 bg-primary-light rounded-lg hover:bg-primary-dark transition duration-300">
+                    <i class="fas fa-graduation-cap text-3xl text-accent-teal"></i>
+                    <p class="font-medium">Education</p>
+                </div>
+                <div class="space-y-3 p-4 bg-primary-light rounded-lg hover:bg-primary-dark transition duration-300">
+                    <i class="fas fa-car text-3xl text-accent-teal"></i>
+                    <p class="font-medium">Automotive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 11. Blog & Articles -->
+    <section id="blog" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">Recent Insights</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="rounded-xl shadow-lg overflow-hidden border border-gray-100 transition duration-300 hover:shadow-xl">
+                                   
+                    <!-- <img src="https://eva.guru/wp-content/uploads/2025/03/seoservicescover.jpg";> -->
+
+                    <img style="height: 160px" width="500px" src=" https://media.licdn.com/dms/image/v2/D4E12AQEqLzJKXvQWJw/article-cover_image-shrink_720_1280/B4EZcwQMN0HQAI-/0/1748861240910?e=2147483647&v=beta&t=Nljwbi4ihT1gs12JDmjE3Wy9UIN4A6C-5dEkz1Np9J4";>
+                   
+
+                    <div class="p-5 space-y-2">
+                        <p class="text-xs text-gray-500">October 1, 2024</p>
+                        <h3 class="text-lg font-bold text-primary-dark hover:text-accent-teal transition duration-300 cursor-pointer">The Impact of Generative AI on eCommerce SEO</h3>
+                        <a href="#" class="text-sm text-primary-light font-medium">Read Article &rarr;</a>
+                    </div>
+                </div>
+                <!-- Article 2 -->
+                <div class="rounded-xl shadow-lg overflow-hidden border border-gray-100 transition duration-300 hover:shadow-xl">
+                    <!-- <img src="https://blogs.vmware.com/wp-content/uploads/sites/104/2021/08/image.png" alt="Blog post thumbnail about cloud security" class="w-full h-40 object-cover"> -->
+
+                    <img src=" https://6be7e0906f1487fecf0b9cbd301defd6.cdn.bubble.io/f1710278365254x725212868811316400/text-to-image" alt="Blog post thumbnail about cloud security" class="w-full h-40 object-cover">
+
+                   
+                    <div class="p-5 space-y-2">
+                        <p class="text-xs text-gray-500">September 20, 2024</p>
+                        <h3 class="text-lg font-bold text-primary-dark hover:text-accent-teal transition duration-300 cursor-pointer">5 Ways to Harden Your Cloud Security Posture</h3>
+                        <a href="#" class="text-sm text-primary-light font-medium">Read Article &rarr;</a>
+                    </div>
+                </div>
+                <!-- Article 3 -->
+                <div class="rounded-xl shadow-lg overflow-hidden border border-gray-100 transition duration-300 hover:shadow-xl">
+                    <img src="https://cdn.shopify.com/s/files/1/0817/7988/4088/files/globalecommrev.png?v=1726004904" alt="Blog post thumbnail about global scaling" class="w-full h-40 object-cover">
+                    <div class="p-5 space-y-2">
+                        <p class="text-xs text-gray-500">September 5, 2024</p>
+                        <h3 class="text-lg font-bold text-primary-dark hover:text-accent-teal transition duration-300 cursor-pointer">Key Regulatory Hurdles for Global eCommerce Expansion</h3>
+                        <a href="#" class="text-sm text-primary-light font-medium">Read Article &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. FAQ Section (Accordion Look) -->
+    <section class="py-16 sm:py-24 bg-surface-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-12 text-primary-dark">Common Queries</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-5 rounded-lg shadow-custom">
+                    <button class="w-full flex justify-between items-center text-primary-dark font-semibold">
+                        <span>What is your primary area of expertise?</span>
+                        <i class="fas fa-chevron-down text-accent-teal"></i>
+                    </button>
+                    <p class="mt-2 text-gray-600 border-t border-gray-100 pt-3 hidden">We specialize in global eCommerce development, digital transformation, and scalable cloud solutions (DevOps, AWS/Azure).</p>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-5 rounded-lg shadow-custom">
+                    <button class="w-full flex justify-between items-center text-primary-dark font-semibold">
+                        <span>Do you offer post-launch support and maintenance?</span>
+                        <i class="fas fa-chevron-down text-accent-teal"></i>
+                    </button>
+                    <p class="mt-2 text-gray-600 border-t border-gray-100 pt-3 hidden">Yes, we provide 24/7 technical support, proactive monitoring, and managed services to ensure continuous uptime and performance.</p>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-5 rounded-lg shadow-custom">
+                    <button class="w-full flex justify-between items-center text-primary-dark font-semibold">
+                        <span>What development platforms do you use?</span>
+                        <i class="fas fa-chevron-down text-accent-teal"></i>
+                    </button>
+                    <p class="mt-2 text-gray-600 border-t border-gray-100 pt-3 hidden">Our core platforms include Adobe Commerce (Magento), Shopify Plus, Salesforce Commerce Cloud, and custom solutions using Node.js, React, and PHP frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. Booking / Contact Form & Final CTA (Merged) -->
+    <section id="contact" class="py-20 sm:py-32 bg-primary-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- CTA Content -->
+                <div class="space-y-6">
+                    <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight text-gradient">Ready to Elevate Your Digital Commerce?</h2>
+                    <p class="text-xl text-gray-300">
+                        Let’s connect and engineer a scalable solution tailored to your global ambitions. Schedule a free consultation today.
+                    </p>
+                    <div class="flex items-center space-x-4 pt-4">
+                        <i class="fas fa-phone-alt text-accent-teal text-xl"></i>
+                        <p class="text-lg font-semibold">+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-8 md:p-10 rounded-xl shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-6 text-primary-dark">Get a Quote</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Full Name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary-light focus:border-primary-light" required>
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Work Email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary-light focus:border-primary-light" required>
+                        </div>
+                        <div>
+                            <textarea placeholder="Tell us about your project..." rows="4" class="w-full p-3 border border-gray-300 rounded-md focus:ring-primary-light focus:border-primary-light" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full px-4 py-3 text-lg font-semibold rounded-md text-white bg-accent-teal hover:bg-primary-light transition duration-300 shadow-lg">
+                            Submit Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-800 pb-8 mb-8">
+                <!-- Column 1: Logo & Social -->
+                <div class="col-span-2 md:col-span-2 space-y-4">
+                    <a href="#" class="text-2xl font-bold text-white">Tech<span class="text-accent-teal">Corp</span></a>
+                    <p class="text-sm">Trusted partner for global eCommerce and technical innovation.</p>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="#" class="hover:text-accent-teal transition duration-300"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-accent-teal transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-accent-teal transition duration-300"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="space-y-3">
+                    <h4 class="text-lg font-semibold text-white">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-accent-teal">About Us</a></li>
+                        <li><a href="#" class="hover:text-accent-teal">Awards & Recognitions</a></li>
+                        <li><a href="#" class="hover:text-accent-teal">Careers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Services -->
+                <div class="space-y-3">
+                    <h4 class="text-lg font-semibold text-white">Expertise</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-accent-teal">eCommerce Dev</a></li>
+                        <li><a href="#solutions" class="hover:text-accent-teal">AI Solutions</a></li>
+                        <li><a href="#case-studies" class="hover:text-accent-teal">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact -->
+                <div class="space-y-3">
+                    <h4 class="text-lg font-semibold text-white">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><p>Email: info@techcorp.com</p></li>
+                        <li><p>Phone: +1 (555) 123-4567</p></li>
+                        <li><a href="#" class="hover:text-accent-teal">Client Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-sm text-gray-500 pt-4">
+                &copy; 2024 TechCorp. All rights reserved. | Developer B. Rashid | | <a href="#" class="hover:text-accent-teal">Privacy Policy</a> | <a href="#" class="hover:text-accent-teal">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JS for FAQ Accordion functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqButtons = document.querySelectorAll('.rounded-lg button');
+
+            faqButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+
+                    // Toggle visibility of the content
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.classList.remove('fa-chevron-down');
+                        icon.classList.add('fa-chevron-up');
+                    } else {
+                        content.classList.add('hidden');
+                        icon.classList.remove('fa-chevron-up');
+                        icon.classList.add('fa-chevron-down');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
